@@ -2,9 +2,9 @@
  *
  * File Name:  main.cpp
  * Author: Marco Borth
- * Assignment:   EECS-560 Lab 3 - Implementation of Hash Table (Closed Hashing)
+ * Assignment:   EECS-560 Lab 5 - Experimental Profiling on Hash Tables 
  * Description:  This lab will contain an implementation of an interactive Hash Table (Closed Hashing).
- * Date: 2/11/20
+ * Date: 2/28/20
  *
  ---------------------------------------------------------------------------- */
 //Start your program.
