@@ -2,16 +2,15 @@
  *
  * File Name:  Operator.h
  * Author: Marco Borth
- * Assignment:   EECS-560 Lab 3 - Implementation of Hash Table (Closed Hashing)
+ * Assignment:   EECS-560 Lab 5 - Experimental Profiling on Hash Tables
  * Description:  Operator Class is defined.
- * Date: 2/11/20
+ * Date: 2/28/20
  *
  ---------------------------------------------------------------------------- */
 
 #ifndef OPERATOR_H
 #define OPERATOR_H
 
-#include "LinkedList.h"
 #include <stdlib.h>
 #include <math.h>
 #include <string>

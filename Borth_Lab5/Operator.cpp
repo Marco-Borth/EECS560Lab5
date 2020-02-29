@@ -2,9 +2,9 @@
  *
  * File Name:  Operator.cpp
  * Author: Marco Borth
- * Assignment:   EECS-560 Lab 3 - Implementation of Hash Table (Closed Hashing)
- * Description:  Operator Class will either run the Interactive program for a Hash Table (Closed Hashing)
- * Date: 2/15/20
+ * Assignment:   EECS-560 Lab 5- Experimental Profiling on Hash Tables
+ * Description:  Operator Class will run the Interactive program for a Hash Table
+ * Date: 2/28/20
  *
  ---------------------------------------------------------------------------- */
 
