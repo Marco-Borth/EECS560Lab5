@@ -28,7 +28,7 @@ void Operator::run() {
 
   int hashTable [m];
   int randomArray [m];
-  int searchArray [(int) floor (0.01 * m)];
+  int searchArray [(int) floor (0.05 * m)];
 
   int inputSize [size];
   clock_t start, end;
@@ -86,15 +86,23 @@ void Operator::run() {
     end = clock();
     buildTime[j] = double(end - start) / double(CLOCKS_PER_SEC);
 
-    for(int i = 0; i < floor (0.01 * m); i++) {
-      random_number = rand() % 5000000 + 1;
-      searchArray[i] = random_number;
+    if (j < 5) {
+      for(int i = 0; i < floor (0.01 * m * (j + 1)); i++) {
+        random_number = rand() % 5000000 + 1;
+        searchArray[i] = random_number;
+      }
+    } else {
+      for(int i = 0; i < floor (0.01 * m * (j - 4)); i++) {
+        random_number = rand() % 5000000 + 1;
+        searchArray[i] = random_number;
+      }
     }
 
-    for(int i = 0; i < floor (0.01 * m); i++) {
-      bool isFound = false;
-      int k = 0;
-      if (j < 5) {
+    if (j < 5) {
+      for(int i = 0; i < floor (0.01 * m * (j + 1)) ; i++) {
+        bool isFound = false;
+        int k = 0;
+
         while( k < 25) {
           hashValue = searchArray[i] % m;
           hashIndex = ( hashValue + int (pow(k, 2)) ) % m;
@@ -110,7 +118,12 @@ void Operator::run() {
 
           k++;
         }
-      } else {
+      }
+    } else {
+      for(int i = 0; i < floor (0.01 * m * (j - 4)) ; i++) {
+        bool isFound = false;
+        int k = 0;
+
         while( k < 25) {
           hashValue = searchArray[i] % m;
           RValue = R - (searchArray[i] - R);
